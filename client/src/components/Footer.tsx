@@ -27,31 +27,23 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/about">
-                  <a className="text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="link-footer-about">
-                    About Us
-                  </a>
+                <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="link-footer-about">
+                  About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services">
-                  <a className="text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="link-footer-services">
-                    Services
-                  </a>
+                <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="link-footer-services">
+                  Services
                 </Link>
               </li>
               <li>
-                <Link href="/certifications">
-                  <a className="text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="link-footer-certifications">
-                    Certifications
-                  </a>
+                <Link href="/certifications" className="text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="link-footer-certifications">
+                  Certifications
                 </Link>
               </li>
               <li>
-                <Link href="/projects">
-                  <a className="text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="link-footer-projects">
-                    Projects
-                  </a>
+                <Link href="/projects" className="text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="link-footer-projects">
+                  Projects
                 </Link>
               </li>
             </ul>
