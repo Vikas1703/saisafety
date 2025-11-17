@@ -27,7 +27,7 @@
   --popover-foreground: 220 15% 12%;
   --popover-border: 220 10% 90%;
   --primary: 215 91% 31%;
-  --primary-foreground: 215 91% 98%;
+  --primary-foreground: 0 0% 100%;
   --secondary: 220 12% 90%;
   --secondary-foreground: 220 15% 12%;
   --muted: 220 12% 92%;
@@ -43,7 +43,7 @@
   --chart-3: 220 70% 45%;
   --chart-4: 25 95% 53%;
   --chart-5: 280 65% 50%;
-  --font-sans: Open Sans, sans-serif;
+  --font-sans: Inter, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
   --radius: .5rem;
@@ -284,5 +284,17 @@
   .border.active-elevate-2:not(.no-active-interaction-elevate)::after,
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
     inset: -1px;
+  }
+
+  /* Respect user's motion preferences for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
